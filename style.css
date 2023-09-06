@@ -4750,7 +4750,7 @@ figcaption {
   overflow-x: hidden;
 }
 
- .content {
+.content {
   color: #fff;
   width: 100%;
   position: absolute;
@@ -4800,13 +4800,13 @@ figcaption {
 
 @keyframes slideUp {
   0% {
-      transform: translateY(100px);
-      opacity: 0;
+    transform: translateY(100px);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0px);
-      opacity: 1;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
@@ -4820,15 +4820,15 @@ p.anim {
 
 @media (min-aspect-ratio: 16/9) {
   .video {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
   .video {
-      width: auto;
-      height: 100%;
+    width: auto;
+    height: 100%;
   }
 }
 
@@ -4851,14 +4851,15 @@ p.anim {
 .content button:hover {
   border: 0;
 }
+
 .footer1 {
-padding: 2rem 0rem 1rem 2rem; 
-margin: auto;
-width: 80%;
-height: auto;
-box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.356);
-border-radius: 10px 10px 0px 0px ;
-margin-top: 1px;
+  padding: 2rem 0rem 1rem 2rem;
+  margin: auto;
+  width: 96%;
+  height: auto;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.356);
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 2px;
 }
 
 .row {
@@ -5002,10 +5003,10 @@ footer .copyright {
 
 @keyframes moveline {
   0% {
-      left: -20px;
+    left: -20px;
   }
 
   100% {
-      left: 100%;
+    left: 100%;
   }
 }
