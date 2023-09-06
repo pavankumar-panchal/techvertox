@@ -4860,6 +4860,8 @@ p.anim {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.356);
   border-radius: 10px 10px 0px 0px;
   margin-top: 2px;
+  background: rgb(6, 1, 27);
+  color: white  ;
 }
 
 .row {
@@ -4901,7 +4903,7 @@ p.anim {
 
 .footer_email {
   width: fit-content;
-  border-bottom: 1px solid #1719b4;
+  border-bottom: 1px solid #ffffff;
   margin: 20px 0;
 }
 
@@ -4920,7 +4922,7 @@ p.anim {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #1719b4;
+  border-bottom: 1px solid #ffffff;
   margin-bottom: 50px;
 }
 
