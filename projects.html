@@ -4,38 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Techvertox</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <style>
+        /* Custom CSS for sticky footer */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            position: fixed;
+            bottom: -50px;
+            /* Set this to a negative value equal to or greater than the footer height */
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer.show {
+            bottom: 0;
+        }
+    </style>
 </head>
 
 <body>
     <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation w-nav">
         <div class="navigation-wrap"><a href="/" class="logo-link w-nav-brand">
-                <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27afe12894fa4b_business-logo%402x.png"
-                    width="108" alt="" class="logo-image"></a>
-            <div class="menu">
-                <nav role="navigation" class="navigation-items w-nav-menu">
-                    <a href="index.html" class="navigation-item w-nav-link w--current">About</a><a href="projects.html"
-                        class="navigation-item w-nav-link">Work</a><a href="team.html"
-                        class="navigation-item w-nav-link">team</a><a href="blog.html"
-                        class="navigation-item w-nav-link">Blog</a><a href="contact.html"
-                        class="navigation-item w-nav-link">Contact</a>
-                </nav>
-                <div class="menu-button w-nav-button">
-                    <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
-                        width="22" alt="" class="menu-icon">
-                </div>
-            </div><a href="mailto:mail@business.com?subject=You've%20got%20mail!"
-                class="button cc-contact-us w-inline-block">
-                <div>Contact US</div>
-            </a>
+                <!-- <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27afe12894fa4b_business-logo%402x.png"
+                    width="108" alt="" class="logo-image"></a> -->
+                <button data-text="Awesome" class="logo">
+                    <span class="actual-text" style="color: black;">&nbsp;TechvertOX&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;TechvertOX&nbsp;</span>
+                </button>
+                <div class="menu">
+                    <nav role="navigation" class="navigation-items w-nav-menu">
+                        <a href="index.html" class="navigation-item w-nav-link w--current">Home</a><a
+                            href="projects.html" class="navigation-item w-nav-link">Work</a><a href="team.html"
+                            class="navigation-item w-nav-link">Team</a>
+                        <a href="contact.html" class="navigation-item w-nav-link">Contact</a>
+                    </nav>
+                    <div class="menu-button w-nav-button">
+                        <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb8fd2f27af658094fa4a_menu-icon.png"
+                            width="22" alt="" class="menu-icon">
+                    </div>
+                </div><a href="mailto:techvertox@gmail.com?subject=You've%20got%20mail!"
+                    class="button cc-contact-us w-inline-block">
+                    <div>Contact US</div>
+                </a>
         </div>
         <div class="w-nav-overlay" data-wf-ignore=""></div>
     </div>
     <div class="section cc-home-wrap">
-        <div class="intro-header cc-subpage">
+        <div class="intro-header cc-subpage" id="about-us-section">
             <div class="intro-content">
-                <div class="heading-jumbo">Our work<br></div>
+                <div class="heading-jumbo">Our Work</div>
             </div>
         </div>
     </div>
@@ -90,18 +119,82 @@
     </div>
     <div class="section">
         <div class="container">
-            <div class="footer-wrap"><a href="https://webflow.com/" target="_blank"
-                    class="webflow-link w-inline-block"><img
-                        src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb93aaf74a2025c4c7dcd_webflow-w-small%402x.png"
-                        width="15" alt="" class="webflow-logo-tiny">
-                    <div class="paragraph-tiny">.........</div>
+            <div class="footer-wrap"><a href="https://webflow.com/" target="_blank" class="webflow-link w-inline-block">
+                    <!-- <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5c6eb93aaf74a2025c4c7dcd_webflow-w-small%402x.png"
+                        width="15" alt="" class="webflow-logo-tiny"> -->
+                    <!-- <div class="paragraph-tiny">&#9400;Techvertox</div> -->
                 </a></div>
         </div>
     </div>
+    <footer class="footer1 anim">
+
+        <div class="row">
+            <div class="col mb-4" style="position: relative;bottom: 20px;">
+                <p class="footer_about" style="margin-left: 2rem;"> <h3 class="">LOGO</h3></p>
+            </div>
+            <div class="col mb-4" style="position: relative;bottom: 20px;">
+                <p class="footer_about" style="margin-left: 2rem;"> <h3 class=""> company</h3></p>
+            </div>
+            <div class="col">
+                <h3>Office</h3>
+                <p></p>
+                <p>Mysore</p>
+                <p class="footer_email">Techvertox@gamil.com</p>
+                <h4>+91 </h4>
+            </div>
+
+            <div class="col">
+                <h3>Newsletter </h3>
+                <form>
+                    <ion-icon class="icon" name="mail"></ion-icon>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+                </form>
+                <div class="social_icons">
+                    <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+                    <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright ">Techvertox Ⓒ 2022 - All Rights Reserved</p>
+    </footer>
+    <footer class="footer">
+        <div class="container">
+            <p style="text-align: center; color: rgba(27, 102, 199, 0.61); font-weight: 900;">&copy; 2023 Techvertox
+            </p>
+        </div>
+    </footer>
     <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://assets.website-files.com/5c6eb5400253230156de2bd6/js/webflow.35ee6e80f.js"
         type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript to show/hide the footer on scroll
+        $(document).ready(function () {
+            var lastScrollTop = 0;
+
+            $(window).scroll(function () {
+                var st = $(this).scrollTop();
+
+                if (st < lastScrollTop) {
+                    // Scroll up
+                    $(".footer").addClass("show");
+                } else {
+                    // Scroll down
+                    $(".footer").removeClass("show");
+                }
+
+                lastScrollTop = st;
+            });
+        });
+
+    </script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 
