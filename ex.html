@@ -1,0 +1,255 @@
+<!-- <div class="slider-thumb"></div>
+<style>
+    body {
+  height: 100vh;
+   background: linear-gradient(90deg,#e52e71,#ff8a00);
+
+}
+
+.slider-thumb::before {
+  position: absolute;
+  content: "";
+  left: 30%;
+  top: 20%;
+  width: 450px;
+  height: 450px;
+  background: #17141d;
+  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+  will-change: border-radius, transform, opacity;
+  animation: sliderShape 5s linear infinite;
+  display: block;
+  z-index: -1;
+  -webkit-animation: sliderShape 5s linear infinite;
+}
+@keyframes sliderShape{
+  0%,100%{
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  34%{
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+  }
+  50%{
+    transform: translate3d(0,0,0) rotateZ(0.01deg);
+  }
+  67%{
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+    transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+  }
+}
+
+</style> -->
+
+
+
+
+<body>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+
+
+    
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  
+  <div class="glowing">
+    
+    <span style="--i:1;"></span>
+    
+    <span style="--i:2;"></span>
+    
+    <span style="--i:3;"></span>
+    
+  </div>
+  <style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.glowing {
+  position: relative;
+  min-width: 700px;
+  height: 550px;
+  margin: -150px;
+  transform-origin: right;
+  animation: colorChange 5s linear infinite;
+}
+
+.glowing:nth-child(even) {
+  transform-origin: left;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+
+.glowing span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 15px;
+  height: 15px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.glowing span:nth-child(3n + 1)::before {
+  background: rgba(134,255,0,1);
+  box-shadow: 0 0 20px rgba(134,255,0,1),
+    0 0 40px rgba(134,255,0,1),
+    0 0 60px rgba(134,255,0,1),
+    0 0 80px rgba(134,255,0,1),
+    0 0 0 8px rgba(134,255,0,.1);
+}
+
+.glowing span:nth-child(3n + 2)::before {
+  background: rgba(255,214,0,1);
+  box-shadow: 0 0 20px rgba(255,214,0,1),
+    0 0 40px rgba(255,214,0,1),
+    0 0 60px rgba(255,214,0,1),
+    0 0 80px rgba(255,214,0,1),
+    0 0 0 8px rgba(255,214,0,.1);
+}
+
+.glowing span:nth-child(3n + 3)::before {
+  background: rgba(0,226,255,1);
+  box-shadow: 0 0 20px rgba(0,226,255,1),
+    0 0 40px rgba(0,226,255,1),
+    0 0 60px rgba(0,226,255,1),
+    0 0 80px rgba(0,226,255,1),
+    0 0 0 8px rgba(0,226,255,.1);
+}
+
+.glowing span:nth-child(3n + 1) {
+  animation: animate 10s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 3s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 3) {
+  animation: animate 8s alternate infinite; 
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+}
+  </style>
+</body>
