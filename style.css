@@ -4673,7 +4673,7 @@ figcaption {
   --border-right: 6px;
   /* --text-stroke-color: rgba(255, 255, 255, 0.6); */
   --text-stroke-color: linear-gradient(45deg, hsl(0, 0%, 0%), hsl(157, 18%, 14%), hsl(163, 32%, 9%));
-  --animation-color: #130627;
+  --animation-color: #16270b;
   /* --animation-color:linear-gradient(45deg, hsl(0, 0%, 0%), hsl(157, 18%, 14%), hsl(163, 32%, 9%)); */
   --fs-size: 2em;
   letter-spacing: 3px;
