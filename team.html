@@ -30,6 +30,48 @@
         .footer.show {
             bottom: 0;
         }
+
+        .team-members {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .team-member:hover {
+            position: relative;
+            top: -10px;
+        }
+
+        .team-pic {
+            width: 80px;
+            height: 80px;
+            background-color: #f2f2f2;
+            /* You can use actual images here */
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+
+        .team-member-title-wrap {
+            text-align: center;
+        }
+
+        .team-member-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .paragraph-light {
+            color: #777;
+        }
     </style>
 </head>
 
@@ -69,42 +111,49 @@
                 </div>
             </div>
         </div>
+
+
+
+
         <div class="section">
             <div class="container">
                 <div class="section-heading-wrap">
                     <div class="label cc-light">Our people<br></div>
                     <h2>Our world-class team<br></h2>
                 </div>
+
+
+
+
                 <div class="w-layout-grid team-members">
-                    <div id="w-node-6bd9fce9803c-16b94d70">
+                    <div class="team-member">
                         <div class="team-pic"></div>
                         <div class="team-member-title-wrap">
                             <div class="team-member-name">Sachin B K</div>
                             <div class="paragraph-light">CEO</div>
                         </div>
                     </div>
-                    <div id="w-node-6bd9fce98043-16b94d70">
+                    <div class="team-member">
                         <div class="team-pic"></div>
                         <div class="team-member-title-wrap">
                             <div class="team-member-name">Keerthan G S</div>
                             <div class="paragraph-light">Product Designer</div>
                         </div>
                     </div>
-                    <div id="w-node-6bd9fce9804a-16b94d70">
+                    <div class="team-member">
                         <div class="team-pic"></div>
                         <div class="team-member-title-wrap">
-                            <div class="team-member-name">Pavan Kumar</div>
+                            <div class="team-member-name">PavanKumar</div>
                             <div class="paragraph-light">Lead Developer</div>
                         </div>
                     </div>
-                    <div id="w-node-6bd9fce98051-16b94d70">
+                    <div class="team-member">
                         <div class="team-pic"></div>
                         <div class="team-member-title-wrap">
                             <div class="team-member-name">Dinesh K N</div>
                             <div class="paragraph-light">Design Director</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -133,52 +182,7 @@
                     </a></div>
             </div>
         </div>
-        <footer class="footer1 anim">
 
-            <div class="row">
-                <div class="col mb-4" style="position: relative;bottom: 20px;">
-                    <p class="footer_about" style="margin-left: 2rem;">
-                    <h3 class="">LOGO</h3>
-                    </p>
-                </div>
-                <div class="col mb-4" style="position: relative;bottom: 20px;">
-                    <p class="footer_about" style="margin-left: 2rem;">
-                    <h3 class=""> company</h3>
-                    </p>
-                </div>
-                <div class="col">
-                    <h3>Office</h3>
-                    <p></p>
-                    <p>Mysore</p>
-                    <p class="footer_email">Techvertox@gamil.com</p>
-                    <h4>+91 </h4>
-                </div>
-
-                <div class="col">
-                    <h3>Newsletter </h3>
-                    <form>
-                        <ion-icon class="icon" name="mail"></ion-icon>
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit"><ion-icon class="icon_right"
-                                name="arrow-round-forward"></ion-icon></button>
-                    </form>
-                    <div class="social_icons">
-                        <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
-                        <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
-                        <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
-                        <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright ">Techvertox Ⓒ 2022 - All Rights Reserved</p>
-        </footer>
-        <footer class="footer">
-            <div class="container">
-                <p style="text-align: center; color: rgba(27, 102, 199, 0.61); font-weight: 600;"> &#169;2023 Techvertox
-                </p>
-            </div>
-        </footer>
 
         <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
