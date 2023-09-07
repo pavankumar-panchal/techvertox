@@ -33,29 +33,24 @@
 
         .team-members {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .team-member {
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 250px;
+            width: 230px;
             text-align: center;
-        }
-
-        .team-member:hover {
-            position: relative;
-            top: -10px;
+            margin: 10px;
         }
 
         .team-pic {
             width: 80px;
             height: 80px;
-            background-color: #f2f2f2;
-            /* You can use actual images here */
+            background-color: #f2f2f2; /* You can use actual images here */
             border-radius: 50%;
             margin: 0 auto 15px;
         }
@@ -71,6 +66,12 @@
 
         .paragraph-light {
             color: #777;
+        }
+
+        @media (max-width: 768px) { /* Adjust for tablets and smaller screens */
+            .team-member {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -112,19 +113,12 @@
             </div>
         </div>
 
-
-
-
         <div class="section">
             <div class="container">
                 <div class="section-heading-wrap">
                     <div class="label cc-light">Our people<br></div>
                     <h2>Our world-class team<br></h2>
                 </div>
-
-
-
-
                 <div class="w-layout-grid team-members">
                     <div class="team-member">
                         <div class="team-pic"></div>
@@ -157,6 +151,8 @@
                 </div>
             </div>
         </div>
+  
+
         <div class="section cc-cta">
             <div class="container">
                 <div class="cta-wrap">
