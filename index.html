@@ -81,10 +81,10 @@
 
         /* Style for the about story wrap */
         .about-story-wrap {
-            background-color: #f5f5f5;
+            /* background-color: #f5f5f5; */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
             width: 100%;
         }
@@ -94,6 +94,27 @@
             font-size: 16px;
             line-height: 1.5;
             color: #141414;
+        }
+
+        /* Styling for the 3D text */
+        .title {
+            font-size: 46px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #ffffff, #faf7f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 2px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Styling for the container */
+        .heading-jumbo {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -131,7 +152,10 @@
 
         <div class="intro-header cc-subpage" id="about-us-section">
             <div class="intro-content">
-                <div class="heading-jumbo title">Artificing Your Digital Perception</div>
+                <!-- <div class="heading-jumbo title">Artificing Your Digital Perception</div> -->
+                <div class="heading-jumbo">
+                    <div class="title">Artificing Your Digital Perception</div>
+                </div>
             </div>
         </div>
 
