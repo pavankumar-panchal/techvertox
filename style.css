@@ -4698,12 +4698,6 @@ figcaption {
   -webkit-text-stroke: 1px var(--animation-color);
 }
 
-/* hover */
-/* .logo:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
-} */
-
 /* Define gradient colors */
 @keyframes gradientChange {
   0% {
