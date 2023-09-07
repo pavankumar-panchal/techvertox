@@ -30,42 +30,6 @@
 
     <!-- demo -->
     <style>
-        .card {
-            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            text-align: justify;
-            padding: 35px;
-            border-radius: 30px;
-            background-color: #fff;
-            margin: 20px;
-            max-width: 300px;
-            /* Adjust the width as needed */
-            display: inline-block;
-            vertical-align: top;
-            /* Align cards to the top */
-        }
-
-        /* Card image */
-        .card img {
-            width: 80px;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-
-        /* Card title */
-        .card h3 {
-            font-size: 20px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        /* Card description */
-        .card p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #555;
-        }
-
         /* Responsive layout */
         @media (min-width: 768px) {
             .w-layout-grid {
@@ -116,6 +80,7 @@
             padding: 20px;
             text-align: center;
         }
+
         .title {
             text-align: center;
         }
@@ -125,7 +90,57 @@
             .title {
                 text-align: center;
                 font-size: 32px;
-                 /* Align text to the left for mobile and tablet screens */
+                /* Align text to the left for mobile and tablet screens */
+            }
+
+        }
+
+        .card {
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            text-align: justify;
+            padding: 35px;
+            border-radius: 30px;
+            background-color: #fff;
+            margin: 20px;
+            max-width: 300px;
+            /* Adjust the width as needed */
+        }
+
+        /* Card image */
+        .card img {
+            width: 50%;
+            max-width: 80px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        /* Card title */
+        .card h3 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Card description */
+        .card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Responsive layout */
+        @media (min-width: 768px) {
+            .w-layout-grid {
+                text-align: center;
+            }
+
+            .card {
+                max-width: none;
+                width: calc(33.33% - 40px);
+                /* 40px is the sum of margins and padding */
+                margin: 10px;
+                display: inline-block;
             }
         }
     </style>
@@ -191,6 +206,10 @@
     </div>
 
 
+
+
+
+
     <div class="section">
         <div class="container">
             <div class="section-heading-wrap">
@@ -203,7 +222,7 @@
 
                     text-align: center; text-align: justify; padding:35px; border-radius: 30px;">
                     <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc0291bc4a389c517cea76_Icon%201.svg"
-                        width="80" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
+                        width="50" alt="" class="service-icon imgs" style="margin:auto; margin-bottom: 20px;">
                     <div class="paragraph-bigger" style="text-align: center;">Website Development</div>
                     <div class="paragraph-light">Our web development service is the key to a stunning online presence.
                         We specialize in creating custom websites tailored to your unique needs and goals.</div>
@@ -211,7 +230,8 @@
                 <div id="w-node-543393b118ec-ab950172" style="box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
                     text-align: center; text-align: justify; padding:35px; border-radius: 30px;">
                     <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc024c4b4cafc14e5d6b64_Icon%201.svg"
-                        width="80" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
+                        width="50" alt="" class="service-icon"
+                        style="margin:auto; margin-bottom: 20px; align-self: center;">
                     <div class="paragraph-bigger" style="text-align: center;">Web Application</div>
                     <div class="paragraph-light">Our company specializes in crafting dynamic and user-friendly web
                         applications.
@@ -221,7 +241,7 @@
                 <div id="w-node-543393b118f2-ab950172" style="box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
                     text-align: center; text-align: justify; padding:35px; border-radius: 30px;">
                     <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc024cbc4a38c1b27ce7a9_Icon%203.svg"
-                        width="80" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
+                        width="50" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
                     <div class="paragraph-bigger" style="text-align: center;">E-commerce Solutions</div>
                     <div class="paragraph-light">Empowering businesses to thrive in the digital marketplace.
                         We turn clicks into customers and dreams into sales.</div>
@@ -229,7 +249,7 @@
                 <div id="w-node-543393b118f8-ab950172" style="box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
                     text-align: center; text-align: justify; padding:35px; border-radius: 30px;">
                     <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc0291bc4a389c517cea76_Icon%201.svg"
-                        width="80" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
+                        width="50" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
                     <div class="paragraph-bigger" style="text-align: center;">Back-End Development</div>
                     <div class="paragraph-light">Unlocking the power of data and functionality behind the scenes,
                         our Back-end Development service ensures seamless reliable digital experiences for your users
@@ -238,7 +258,7 @@
                 <div id="w-node-543393b118fe-ab950172" style="box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
                     text-align: center; text-align: justify; padding:35px; border-radius: 30px;">
                     <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc024cbc4a38c1b27ce7a9_Icon%203.svg"
-                        width="80" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
+                        width="50" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
                     <div class="paragraph-bigger" style="text-align: center;">Website Maintance<br></div>
                     <div class="paragraph-light">Keep your digital presence updated and secure with our Website
                         Maintenance service. We handle the technical details,
@@ -247,7 +267,7 @@
                 <div id="w-node-543393b11905-ab950172" style="box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
                     text-align: center; text-align: justify; padding:35px; border-radius: 30px;">
                     <img src="https://assets.website-files.com/5c6eb5400253230156de2bd6/5cdc024dbc4a383b0d7ce7aa_Icon%202.svg"
-                        width="80" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
+                        width="50" alt="" class="service-icon" style="margin:auto; margin-bottom: 20px;">
                     <div class="paragraph-bigger" style="text-align: center;">UI/UX Design <br></div>
                     <div class="paragraph-light">Crafting seamless digital experiences that captivate and delight users,
                         one pixel at a time.</div>
@@ -255,6 +275,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <div class="section_our_solution container mb-5" style="width: 100%; position: relative;left: 10px; bottom: 2rem;">
         <div class="row" style="width:100%;">
