@@ -5177,17 +5177,138 @@ footer .copyright {
   }
 }
 
-/*  */
-.footer {
-  background-color: white;
-  padding: 10px 0;
-  position: fixed;
-  bottom: -60px;
-  /* Set this to a negative value equal to or greater than the footer height */
-  width: 100%;
-  transition: all 0.3s ease-in-out;
+
+/*************************** 
+    FOOTER SECTION
+***************************/
+.footer-list ul,
+.footer-bottom ul {
+  padding-left: 0.3rem;
 }
 
-.footer.show {
-  bottom: 0;
+li {
+  list-style: none;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+.footer-bottom ul li a {
+  text-decoration: none;
+}
+
+footer {
+  background: #00720090;
+}
+
+.main-footer span {
+  font-weight: 100;
+}
+
+.main-footer h4,
+.footer-list h4 {
+  color: #fff;
+}
+
+footer a,
+footer p {
+  color: #f5f5f5;
+}
+
+footer a:hover {
+  transition: 0.2s ease-in-out;
+  color: #fff;
+}
+
+.footer-container {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer {
+  width: 45%;
+  padding: 3% 3% 0;
+  margin-bottom: 60px;
+  color: #e1e8eb;
+}
+
+.main-footer p {
+  margin: 18px 0;
+}
+
+.main-footer i {
+  margin-right: 21px;
+}
+
+.main-footer i:hover {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer-nav {
+  width: 50%;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list ul {
+  padding-top: 12px;
+}
+
+.footer-list ul li {
+  margin-top: 6px;
+}
+
+.footer-list ul li i {
+  margin-right: 5px;
+}
+
+.footer-bottom {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f5f5f5;
+}
+
+.footer-bottom ul li {
+  display: inline-block;
+  padding: 0 1.2em;
+  margin: 0 6px;
+}
+
+.footer-bottom p {
+  padding: 0 1.8em;
+}
+
+
+@media all and (max-width: 769px) {
+
+  /***************************
+  FOOTER SECTION
+  ***************************/
+  footer {
+    text-align: center;
+  }
+
+  .main-footer {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-bottom ul {
+    display: none;
+  }
+
+  .footer-bottom {
+    justify-content: center;
+  }
 }
