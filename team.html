@@ -11,7 +11,6 @@
 
 
     <style>
-        /* Custom CSS for sticky footer */
         body {
             margin: 0;
             padding: 0;
@@ -76,7 +75,7 @@
                 width: 100%;
             }
         }
-        
+
         .whole {
             width: 92%;
             height: 500px;
@@ -114,6 +113,66 @@
             -webkit-backdrop-filter: blur(5px);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.13);
+        }
+
+        .our-contacts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .contact-team {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .contact-team-pic {
+            width: 100px;
+            height: 100px;
+            /* img */
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+
+        .contact-team-name-wrap {
+            text-align: center;
+        }
+
+        .paragraph-bigger {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .paragraph-light {
+            color: #777;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        .contact-email-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-email-link:hover {
+            text-decoration: underline;
+        }
+
+        /*  */
+        @media (max-width: 768px) {
+
+            /* Adjust for tablets and smaller screens */
+            .contact-team {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -159,41 +218,69 @@
                 <!-- <div class="text">Our Work</div> -->
             </div>
         </div>
+
+
+
         <div class="section">
             <div class="container">
                 <div class="section-heading-wrap">
-                    <div class="label cc-light">Our people<br></div>
-                    <h2>Our world-class team<br></h2>
+                    <div class="label cc-light">What we are best at</div>
+                    <h2>Our Intellects</h2>
                 </div>
-                <div class="w-layout-grid team-members">
-                    <div class="team-member">
-                        <div class="team-pic"></div>
-                        <div class="team-member-title-wrap">
-                            <div class="team-member-name">Sachin B K</div>
-                            <div class="paragraph-light">CEO</div>
+                <div class="w-layout-grid our-contacts">
+                    <div class="contact-team">
+                        <div class="contact-team-pic"></div>
+                        <div class="contact-team-name-wrap">
+                            <div class="paragraph-bigger">Sachin B K</div>
+                            <!-- <div class="paragraph-light">CEO</div> -->
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-team-details-wrap">
+                            <a href="mailto:ceo@business.com?subject=You've%20got%20mail!"
+                                class="contact-email-link">sachinsachinbk17@gmail.com</a>
+                            <div class="paragraph-light">+91 93805 64684</div>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <div class="team-pic"></div>
-                        <div class="team-member-title-wrap">
-                            <div class="team-member-name">Keerthan G S</div>
-                            <div class="paragraph-light">Product Designer</div>
+                    <div class="contact-team">
+                        <div class="contact-team-pic"></div>
+                        <div class="contact-team-name-wrap">
+                            <div class="paragraph-bigger">Keerthan</div>
+                            <!-- <div class="paragraph-light">--</div> -->
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-team-details-wrap">
+                            <a href="mailto:ceo@business.com?subject=You've%20got%20mail!"
+                                class="contact-email-link">keerthangs08@gmail.com</a>
+                            <div class="paragraph-light">+91 87922 66367</div>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <div class="team-pic"></div>
-                        <div class="team-member-title-wrap">
-                            <div class="team-member-name">PavanKumar</div>
-                            <div class="paragraph-light">Lead Developer</div>
+                    <div class="contact-team">
+                        <div class="contact-team-pic"></div>
+                        <div class="contact-team-name-wrap">
+                            <div class="paragraph-bigger">PavanKumar</div>
+                            <!-- <div class="paragraph-light">--</div> -->
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-team-details-wrap">
+                            <a href="mailto:ceo@business.com?subject=You've%20got%20mail!"
+                                class="contact-email-link">panchalpavan800@gmail.com</a>
+                            <div class="paragraph-light">+91 97400 28259</div>
                         </div>
                     </div>
-                    <div class="team-member">
-                        <div class="team-pic"></div>
-                        <div class="team-member-title-wrap">
-                            <div class="team-member-name">Dinesh K N</div>
-                            <div class="paragraph-light">Design Director</div>
+                    <div class="contact-team">
+                        <div class="contact-team-pic"></div>
+                        <div class="contact-team-name-wrap">
+                            <div class="paragraph-bigger">Dinesh K N</div>
+                            <!-- <div class="paragraph-light">--</div> -->
+                        </div>
+                        <div class="divider"></div>
+                        <div class="contact-team-details-wrap">
+                            <a href="mailto:ceo@business.com?subject=You've%20got%20mail!"
+                                class="contact-email-link">tpr.dinesh98@gmail.com</a>
+                            <div class="paragraph-light">+91 83104 54175</div>
                         </div>
                     </div>
+                    <!-- Repeat similar code for other team members -->
                 </div>
             </div>
         </div>
